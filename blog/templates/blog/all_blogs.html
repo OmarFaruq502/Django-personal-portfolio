@@ -1,1 +1,9 @@
 <h1>This is a blog page</h1>
+
+{% for entry in blogs %}
+<h2>{{ entry.title }}</h2>
+
+<h3>{{ entry.description }}</h3>
+
+<h3>{{ entry.date }}</h3>
+{% endfor %}
